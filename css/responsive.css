@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1024px){
+	.videoCards {width: calc(100%/3 - 20px);}
+}
+
+@media only screen and (max-width: 768px){
+	.videoCards {width: calc(100%/2 - 20px);}
+	.header .middleBx {flex-basis: 320px;}
+	.fixedSidebar { left: -250px; }
+	.fixedSidebar.close {left: 0px; width: 240px; background: #fff; overflow: auto; box-shadow: 0px 20px 12px 1px rgba(34,36,38,.55);}
+	.rightSection { left: 0; width: 100%; }
+	.fixedSidebar.close ~ .rightSection {left: 0; width: 100%;}
+	.fixedSidebar.close .sidebarLink ul li a { justify-content: flex-start; }
+	.fixedSidebar.close .sidebarLink ul li a > i { margin-right: 20px; }
+	.fixedSidebar.close .sidebarLink ul li a > span  {display: flex;}
+	.fixedSidebar.close nav.sidebarLink:nth-last-of-type(-n+3) { display: block; }
+	.fixedSidebar.close nav.sidebarLink:first-child { padding-top: 0; }
+}
+
+@media only screen and (max-width: 600px){
+	.videoCards {width:100%;}
+	.header .middleBx {position: fixed; width: 95%; top: 66px; left: 50%; transform: translateX(-50%);} 
+	.catBx {box-shadow: 1px 3px 10px rgba(34,36,38,.15);}
+    .profileDropdown.show,
+	.notificationDropdown.show {position: fixed; width: 100%; max-width: 100%; top: 56px;}
+}
+
